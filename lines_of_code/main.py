@@ -1,11 +1,14 @@
 import os
 import sys
 
-from lines_of_code.utils import get_blank_lines, get_comment_lines
+from lines_of_code.utils import scan_lines
 from lines_of_code.rules import definitions
 
 
 def get_lines_of_code(input_path):
+    """
+    Function to return total, comment, blank and code lines in a file present in input_path.
+    """
 
     result = {}
     
@@ -26,8 +29,8 @@ def get_lines_of_code(input_path):
 
         lines_list = file.readlines()
         total_lines = len(lines_list)
-        blank_lines = get_blank_lines(lines_list, definition['defs'])
-        comment_lines = get_comment_lines(lines_list, definition['defs'])
+        
+        blank_lines, comment_lines = scan_lines(lines_list, definition['defs'])
 
         code_lines = total_lines - (blank_lines + comment_lines)
 

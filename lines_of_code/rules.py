@@ -4,6 +4,8 @@ definitions = {
         'extension': 'js',
         'defs': {
             'comment': '//',
+            'multiline_comment_start': '/*',
+            'multiline_comment_end': '*/',
             'empty_line': r'^\s*$'
         }
     },
@@ -12,6 +14,8 @@ definitions = {
         'extension': 'py',
         'defs': {
             'comment': '#',
+            'multiline_comment_start': '"""',
+            'multiline_comment_end': '"""',
             'empty_line': r'^\s*$'
         }
     },
@@ -20,6 +24,8 @@ definitions = {
         'extension': 'java',
         'defs': {
             'comment': '//',
+            'multiline_comment_start': '/*',
+            'multiline_comment_end': '*/',
             'empty_line': r'^\s*$'
         }
     }

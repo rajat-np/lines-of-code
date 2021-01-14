@@ -6,9 +6,9 @@ class TestLinesOfCode(unittest.TestCase):
 
     def test_python_code(self):
         expected_result = {
-            'total_lines': 8,
-            'blank_lines': 3,
-            'comment_lines': 1,
+            'total_lines': 14,
+            'blank_lines': 5,
+            'comment_lines': 5,
             'code_lines': 4
         }
         actual_result = get_lines_of_code('./tests/source_files/test.py')
@@ -16,10 +16,10 @@ class TestLinesOfCode(unittest.TestCase):
     
     def test_java_code(self):
         expected_result = {
-            'blank_lines': 3, 
-            'code_lines': 6, 
-            'comment_lines': 3, 
-            'total_lines': 12
+            'total_lines': 21, 
+            'blank_lines': 6, 
+            'comment_lines': 9, 
+            'code_lines': 6
         }
 
         actual_result = get_lines_of_code('./tests/source_files/test.java')
