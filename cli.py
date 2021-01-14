@@ -2,6 +2,9 @@ import argparse
 
 from lines_of_code.main import get_lines_of_code
 
+"""
+Basic command line interface using argparse
+"""
 
 if __name__ == '__main__':        
     arg_parser = argparse.ArgumentParser(prog='lines_of_code', description='Count lines of code in a source file')

@@ -6,7 +6,7 @@ Lines of code is a command line tool to count the number of source code lines in
 ## Quickstart
 
 ```bash
-$ python command.py ./path/to/source/file
+$ python cli.py ./path/to/source/file
 ```
 
 As an example here is the summary output:
